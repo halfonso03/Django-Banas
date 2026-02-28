@@ -1,0 +1,5 @@
+
+
+create startup -> django-admin startproject tut2 .
+create project -> python manage.py startapp pages
+run app -> python manage.py runserver

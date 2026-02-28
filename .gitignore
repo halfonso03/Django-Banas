@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*~$
+
+# Environments
+.env
+.venv/
+env/
+venv/
+ENV/
+bin/
+lib/
+include/
+pip-log.txt
+
+# Django-specific
+*.log
+*.pot
+*.sql
+db.sqlite3
+local_settings.py
+
+# IDE specific (optional, consider a global gitignore instead)
+.vscode/
+.idea/
+
+# Static and Media files
+static/
+media/
+
+# Distribution and packaging
+build/
+dist/
+*.egg-info/
