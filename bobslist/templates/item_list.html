@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+<div>{% block title %}Items for Sale {% endblock title %}</div>
+<div>
+  {% block content %}
+  <div class="card-columns">
+    {% for item in object_list %}
+    <div class="card">
+      <img
+        class="card-img-top"
+        src="{{ item.photos.url }}"
+        alt="{{ item.title }}"
+      />
+      <div class="card-body text-center">
+        <h4 class="card-title">{{ item.title }}</h4>
+        <p class="card-text">{{ item.price }}</p>
+        <a href="{% url 'item_detail' item.pk %}" class="btn btn-primary"
+          >More Info</a
+        >
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+  {% endblock content %}
+</div>

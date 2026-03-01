@@ -1,1 +1,20 @@
 {% extends "base.html" %} {% block title%} Home {% endblock title %}
+
+<div>
+  {% block content %}
+
+  <div class="jumbotron">
+    <h1 class="display-4">Bob's Stuff for Sale</h1>
+    <p class="lead">Buy and Sell Anything</p>
+    <p class="lead">
+      <a
+        href="{% url 'item_list' %}"
+        class="btn btn-primary btn-lg"
+        role="button"
+      >
+        View Bikes
+      </a>
+    </p>
+  </div>
+  {% endblock content %}
+</div>

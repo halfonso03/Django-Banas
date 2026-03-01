@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+<div>{% block title %}More Info on Item {% endblock title %}</div>
+{% block content %}
+<div class="item-entry">
+  <h2>{{ object.title }}</h2>
+  <article>
+    <p>offered by {{ object.seller }} | {{ object.date }}</p>
+    <img src="{{ item.photos.url }}" alt="{{ item.title }}" />
+    {{ object.description|linebreaks }}
+    <p>Price: {{ object.price }}</p>
+  </article>
+</div>
+{% endblock content %}
