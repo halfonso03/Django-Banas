@@ -9,5 +9,11 @@
     {{ object.description|linebreaks }}
     <p>Price: {{ object.price }}</p>
   </article>
+  <p>
+    <a href="{% url 'item_edit' item.pk %}">Edit</a>
+    |
+    <a href="{% url 'item_delete' item.pk %}">Delete</a>
+  </p>
+  <p>Back to <a href="{% url 'item_list'%}">All Items</a></p>
 </div>
 {% endblock content %}
